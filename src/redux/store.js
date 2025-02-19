@@ -7,6 +7,7 @@ import { persistReducer, persistStore } from "redux-persist";
 const contactsPersistConfig = {
   key: "contacts",
   storage,
+  blacklist: ["filter"],
 };
 
 const rootReducer = combineReducers({
